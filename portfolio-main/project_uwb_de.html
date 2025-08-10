@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWB für Shared Guide Dog 4.0 System - Mohammad Al Aloush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="hero-bg text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-6">
+                <a href="portfolio_de.html" class="flex items-center text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Zurück zum Portfolio
+                </a>
+                <div class="flex space-x-4">
+                    <a href="project_uwb_en.html" class="px-3 py-1 hover:bg-white hover:bg-opacity-20 rounded-full text-sm font-medium transition-colors">EN</a>
+                    <a href="project_uwb_de.html" class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm font-medium">DE</a>
+                    <a href="project_uwb_ar.html" class="px-3 py-1 hover:bg-white hover:bg-opacity-20 rounded-full text-sm font-medium transition-colors">AR</a>
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-2">UWB für Shared Guide Dog 4.0 System</h1>
+            <p class="text-xl opacity-90">Forschungsprojekt: Evaluierung der Ultra-Wideband-Technologie</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Project Image -->
+            <div class="mb-12">
+                <img src="images/uwb_triangulation.jpg"
+                     alt="UWB Triangulations-Diagramm"
+                     class="w-full max-h-80 object-contain rounded-lg shadow-lg bg-gray-100">
+            </div>
+
+            <!-- Project Description -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Projektbeschreibung</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Dieses akademische Forschungsprojekt untersuchte die Genauigkeitsgrenzen der Ultra-Wideband (UWB) Technologie für den "Shared Guide Dog 4.0", 
+                    ein Assistenzsystem für sehbehinderte Menschen. Das primäre Ziel war die Evaluierung von UWB als zuverlässige Alternative zu GPS für 
+                    präzise Navigation in städtischen Umgebungen, wo Satellitensignale oft schwach oder nicht verfügbar sind.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Die Studie umfasste eine vergleichende Analyse zwischen einem älteren UWB-System (basierend auf dem DW1000-Chip) und einem 
+                    System der neuen Generation (mit dem DW3000-Chip), um dessen Eignung für reale Anwendungen zu bestimmen.
+                </p>
+            </section>
+
+            <!-- Challenges -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Herausforderungen</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-crosshairs text-blue-600 mr-2"></i>
+                            Hochpräzisions-Anforderung
+                        </h3>
+                        <p class="text-gray-600">Das System musste eine Positionierungsgenauigkeit von weniger als 30 cm erreichen für sichere Navigation auf schmalen Gehwegen und um Hindernisse herum.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-building text-blue-600 mr-2"></i>
+                            Umgebungsinterferenzen
+                        </h3>
+                        <p class="text-gray-600">Städtische Schluchten, Gebäude und Fahrzeuge verursachen erhebliche Mehrwegausbreitung, die die Genauigkeit funkbasierter Positionierungssysteme beeinträchtigt.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-microchip text-blue-600 mr-2"></i>
+                            Hardware-Limitierungen
+                        </h3>
+                        <p class="text-gray-600">Entdeckung eines unerwarteten Hardware-Problems, bei dem die Batterie des UWB-Tags die Antenne abschirmte und Signalverlust sowie inkonsistente Leistung verursachte.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-dollar-sign text-blue-600 mr-2"></i>
+                            Kosteneffizienz
+                        </h3>
+                        <p class="text-gray-600">Der Abstand zwischen festen UWB-Ankern musste für praktische Implementierung maximiert werden, ohne die erforderliche Genauigkeit zu beeinträchtigen.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution & Methodology -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Lösung & Methodik</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <p class="text-lg text-gray-600 mb-6">
+                        Eine systematische, mehrstufige Testmethodik wurde entwickelt, um die Leistung des UWB-Systems rigoros zu evaluieren. 
+                        Mein innovativer Ansatz umfasste:
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Systematische Tests:</strong>
+                                <span class="text-gray-600"> Durchführung umfassender 1D- und 2D-Tests in kontrollierten Innenräumen und herausfordernden Außenumgebungen zur Simulation realer Szenarien.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Dynamische Analyse:</strong>
+                                <span class="text-gray-600"> Verwendung eines Fahrrads zur Simulation der konstanten Bewegung des Shared Guide Dogs, Bewertung der Systemleistung unter dynamischen Bedingungen.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Problemisolierung:</strong>
+                                <span class="text-gray-600"> Entwicklung spezifischer Tests, die das Batterie-Abschirmungsproblem isolierten—ein wichtiger Befund für zukünftige Hardware-Revisionen.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Datengetriebene Analyse:</strong>
+                                <span class="text-gray-600"> Nutzung von Python und Excel für statistische Analyse von Genauigkeit, Standardabweichung und Identifikation von Fehlerquellen.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Ergebnisse & Resultat</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+                        <div class="text-center">
+                            <i class="fas fa-bullseye text-green-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Überlegene Genauigkeit</h3>
+                            <p class="text-gray-600">DW3000 erreichte ±4 cm durchschnittliche Genauigkeit und übertraf die Projektanforderungen bei weitem</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+                        <div class="text-center">
+                            <i class="fas fa-lightbulb text-blue-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Kritische Hardware-Erkenntnis</h3>
+                            <p class="text-gray-600">Identifikation des Batterie-Interferenz-Problems führte zu Hardware-Redesign-Empfehlungen</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+                        <div class="text-center">
+                            <i class="fas fa-check-double text-purple-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Machbarkeitsbestätigung</h3>
+                            <p class="text-gray-600">Bestätigung von DW3000-basiertem UWB als hochvielversprechende Technologie für das Projekt</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Demonstrierte Schlüsselkompetenzen</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">UWB-Technologie</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Systemtests & Validierung</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Hardware-Fehlerbehebung</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Datenanalyse (Python, Excel)</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Problemlösung</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Wissenschaftliche Forschung & Berichterstattung</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Mohammad Al Aloush. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

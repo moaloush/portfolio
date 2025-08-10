@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Al Aloush - Persönliches Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .hero-section { background: linear-gradient(to right, #005792, #00204a); }
+        .section-title { border-bottom: 3px solid #005792; padding-bottom: 10px; display: inline-block; }
+        .card-link { display: block; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-link:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .lang-btn { background-color: rgba(255, 255, 255, 0.2); border: 1px solid white; color: white; padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: background-color 0.3s; text-decoration: none; display: inline-block; }
+        .lang-btn.active, .lang-btn:hover { background-color: white; color: #005792; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="absolute top-0 right-0 p-4 md:p-6 z-10">
+        <div class="flex space-x-2">
+            <a href="portfolio.html" class="lang-btn">EN</a>
+            <a href="portfolio_de.html" class="lang-btn active">DE</a>
+            <a href="portfolio_ar.html" class="lang-btn">AR</a>
+        </div>
+    </div>
+    <header class="hero-section text-white text-center p-16 md:p-24 relative">
+        <img src="https://placehold.co/150x150/ffffff/333333?text=MA" alt="Profilbild von Mohammad Al Aloush" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-white shadow-lg mb-4">
+        <h1 class="text-4xl md:text-5xl font-bold">Mohammad Al Aloush</h1>
+        <p class="text-xl md:text-2xl mt-2">Mechatronik-Student mit Schwerpunkt Robotik</p>
+    </header>
+    <main class="container mx-auto p-8 md:p-12">
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 section-title">Über Mich</h2>
+            <p class="text-lg leading-relaxed">
+                Ich bin Mohammad, ein Mechatronik-Student mit Schwerpunkt Robotik an der HAW Hamburg. Derzeit arbeite ich als Werkstudent bei Ant Robotics GmbH, wo ich meine Fähigkeiten in der Automatisierungstechnik vertiefe. Mit Erfahrungen aus diversen technischen Tätigkeiten bringe ich eine starke technische Kompetenz und eine Leidenschaft für innovative Lösungen mit.
+            </p>
+        </section>
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Werdegang</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="https://www.antrobotics.de/" target="_blank" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md h-full"><h3 class="font-bold text-xl mb-2 text-blue-800">Werkstudent bei Ant Robotics GmbH</h3><p class="text-gray-700">Mitarbeit an innovativen Automatisierungslösungen und Vertiefung meiner Kenntnisse in der SPS-Programmierung.</p></div></a>
+                <a href="https://www.muellerfehrmann.de/" target="_blank" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md h-full"><h3 class="font-bold text-xl mb-2 text-blue-800">Aushilfe bei Müller & Fehrmann GmbH</h3><p class="text-gray-700">Unterstützung bei der Montage und Inbetriebnahme von Anlagen, Einblicke in die praktische Elektrotechnik.</p></div></a>
+                <a href="https://www.expert.de/" target="_blank" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md h-full"><h3 class="font-bold text-xl mb-2 text-blue-800">Aushilfe bei Expert Boetius</h3><p class="text-gray-700">Tätigkeiten im Verkauf und in der Kundenberatung, Stärkung der Kommunikationsfähigkeiten.</p></div></a>
+                <a href="https://www.haw-hamburg.de/bachelor-mechatronik/" target="_blank" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md h-full"><h3 class="font-bold text-xl mb-2 text-blue-800">B.Sc. Mechatronik an der HAW Hamburg</h3><p class="text-gray-700">Erwerb von Kenntnissen in Robotertechnik, Aktorik, Sensorik sowie industrieller Bildverarbeitung zur Entwicklung und Integration komplexer Robotersysteme.</p></div></a>
+            </div>
+        </section>
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Meine Fähigkeiten</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-3">SPS & PLC</h3><p>CODESYS, TIA Portal, SPS-Programmierung</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-3">Programmierung</h3><p>C++, Python, Matlab/Simulink</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-3">Sprachen</h3><p>Deutsch (C1), Englisch (B2), Arabisch (Muttersprache)</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-3">Weitere Kenntnisse</h3><p>Microsoft Office</p></div>
+            </div>
+        </section>
+        <section id="professional-projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Berufliche Projekte</h2>
+            <div class="grid md:grid-cols-1 gap-8">
+                <a href="project_hmi_de.html" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-2">HMI für ADIR Sprayer bei Ant Robotics</h3><p class="text-gray-700">Entwicklung einer Mensch-Maschine-Schnittstelle für einen autonomen landwirtschaftlichen Sprühroboter mit CODESYS SPS-Programmierung und industriellen Kommunikationsprotokollen. Klicken Sie hier für mehr Details.</p></div></a>
+            </div>
+        </section>
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Akademische Projekte</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="project_sorting_de.html" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-2">Sortieranlage mit SPS</h3><p class="text-gray-700">Konzeption und Programmierung einer automatisierten Sortieranlage unter Verwendung von SPS-Technologie. Klicken Sie hier für mehr Details.</p></div></a>
+                <a href="project_navigation_de.html" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-2">Autonome Fahrzeugnavigation</h3><p class="text-gray-700">Entwicklung von Algorithmen für ein autonom navigierendes Fahrzeugmodell zur Umfelderkennung und Pfadplanung. Klicken Sie hier für mehr Details.</p></div></a>
+                <a href="project_uwb_de.html" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-2">UWB für Shared Guide Dog 4.0</h3><p class="text-gray-700">Forschungsprojekt zur Untersuchung der Genauigkeit von Ultra-Wideband-Technologie für präzise Navigationshilfssysteme für sehbehinderte Menschen. Klicken Sie hier für mehr Details.</p></div></a>
+                <a href="project_energy_de.html" class="card-link"><div class="bg-white p-6 rounded-lg shadow-md"><h3 class="font-bold text-xl mb-2">Autonome Energieversorgung einer Insel</h3><p class="text-gray-700">Bachelorprojekt zur Entwicklung eines umfassenden Konzepts für nachhaltige und autonome Energieversorgung basierend ausschließlich auf erneuerbaren Quellen. Klicken Sie hier für mehr Details.</p></div></a>
+            </div>
+        </section>
+        <section id="contact" class="text-center bg-white p-12 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold mb-4 section-title">Kontaktieren Sie mich</h2>
+            <p class="text-lg mb-6">Ich bin immer offen für neue Herausforderungen und spannende Projekte. <br>Lassen Sie uns ins Gespräch kommen!</p>
+            <div class="flex justify-center items-center space-x-6 flex-wrap">
+                <a href="mailto:mohammad.alaloush@outlook.de" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 text-lg mb-4 md:mb-0"><i class="fas fa-envelope mr-2"></i> E-Mail senden</a>
+                <span class="text-lg font-semibold"><i class="fas fa-phone mr-2"></i>+49 176 21825104</span>
+            </div>
+            <div class="mt-8 text-3xl">
+                <a href="#" class="text-gray-600 hover:text-blue-700 mx-4" aria-label="LinkedIn Profil"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 mx-4" aria-label="GitHub Profil"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-400 mx-4" aria-label="Xing Profil"><i class="fab fa-xing"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-6 bg-gray-800 text-white"><p>&copy; 2025 Mohammad Al Aloush. Alle Rechte vorbehalten.</p></footer>
+</body>
+</html>

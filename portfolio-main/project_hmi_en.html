@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMI for ADIR Sprayer - Mohammad Al Aloush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="hero-bg text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-6">
+                <a href="portfolio.html" class="flex items-center text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Portfolio
+                </a>
+                <div class="flex space-x-4">
+                    <a href="project_hmi_en.html" class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm font-medium">EN</a>
+                    <a href="project_hmi_de.html" class="px-3 py-1 hover:bg-white hover:bg-opacity-20 rounded-full text-sm font-medium transition-colors">DE</a>
+                    <a href="project_hmi_ar.html" class="px-3 py-1 hover:bg-white hover:bg-opacity-20 rounded-full text-sm font-medium transition-colors">AR</a>
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-2">HMI for ADIR Sprayer at Ant Robotics</h1>
+            <p class="text-xl opacity-90">Industrial Project: Human-Machine Interface Development</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Project Image -->
+            <div class="mb-12">
+            <!-- Zweites Projektvideo: Erweiterte HMI-Funktionen -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">Erweiterte HMI-Funktionen (CODESYS)</h2>
+                <video controls width="100%">
+                    <source src="images/hmi_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="mt-4 text-gray-700">Dieses Video zeigt weiterführende Funktionen und Interaktionen der HMI-Oberfläche für das ADIR Sprayer Gerät. Es werden komplexe Steuerungsabläufe und die Benutzerfreundlichkeit der Oberfläche in CODESYS demonstriert.</p>
+            </div>
+             <img src="images/hmi_adir.jpg"
+                 alt="HMI Interface for ADIR Sprayer Device"
+                 class="w-full max-h-80 object-contain rounded-lg shadow-lg bg-gray-100">
+            </div>
+            <!-- Projektvideo: HMI Display Test -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">HMI Display Test (CODESYS)</h2>
+                <video controls width="100%">
+                    <source src="images/ecomatDisplaytestIn2001.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="mt-4 text-gray-700">Das Video zeigt einen Testlauf des HMI-Displays für das ADIR Sprayer Gerät in CODESYS. Hier wird die Benutzeroberfläche und die Funktionalität des Systems demonstriert.</p>
+            </div>
+            </div>
+
+            <!-- Project Description -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Description</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    As a working student at Ant Robotics, I was tasked with the development of a Human-Machine Interface (HMI) for the "ADIR," 
+                    an autonomous agricultural spraying robot. The goal was to create an intuitive and robust interface on a CODESYS-based PLC 
+                    that would allow farm operators to easily configure, operate, and monitor the robot's complex automated tasks in a greenhouse environment.
+                </p>
+            </section>
+
+            <!-- Challenges -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Challenges</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-cogs text-blue-600 mr-2"></i>
+                            Complex Control Logic
+                        </h3>
+                        <p class="text-gray-600">The robot required precise configuration for various parameters such as number of rows to spray, distances, and spacing. The HMI needed to simplify this complexity.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-network-wired text-blue-600 mr-2"></i>
+                            System Integration
+                        </h3>
+                        <p class="text-gray-600">The HMI/PLC system had to communicate reliably with multiple motor controllers and sensors over a CAN bus network.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>
+                            Real-Time Feedback
+                        </h3>
+                        <p class="text-gray-600">Providing operators with clear, real-time status updates, battery levels, and fault diagnostics was critical for safe operation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                            <i class="fas fa-exchange-alt text-blue-600 mr-2"></i>
+                            Protocol Implementation
+                        </h3>
+                        <p class="text-gray-600">Required implementing both low-level CAN communication for real-time control and setting up an OPC UA server for higher-level data monitoring.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution & Methodology -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Solution & Methodology</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <p class="text-lg text-gray-600 mb-6">
+                        I took a hands-on, solutions-oriented approach to develop the HMI from concept to implementation. My contributions included:
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">PLC & HMI Programming:</strong>
+                                <span class="text-gray-600"> Designed and programmed the entire HMI application and underlying control logic using CODESYS (Structured Text), creating user-friendly screens for parameter input and robot status visualization.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">CAN Bus Communication:</strong>
+                                <span class="text-gray-600"> Defined and implemented the CAN communication protocol, programming the PLC to construct and transmit specific CAN frames to control the robot's motors and sprayer system.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">OPC UA Integration:</strong>
+                                <span class="text-gray-600"> Configured an OPC UA server on the CODESYS controller to enhance data accessibility and enable other systems to monitor the robot's status and operational data.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Innovative Problem-Solving:</strong>
+                                <span class="text-gray-600"> Developed function blocks to manage robot state, handle fault conditions, and parse incoming CAN messages, ensuring a robust and error-tolerant system.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Results & Outcome</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+                        <div class="text-center">
+                            <i class="fas fa-desktop text-green-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Fully Functional HMI</h3>
+                            <p class="text-gray-600">Delivered a complete and intuitive HMI that significantly simplified the operation of the ADIR robot</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt text-blue-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Robust Control System</h3>
+                            <p class="text-gray-600">PLC program reliably managed all robot functions via well-structured CAN and OPC UA architecture</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+                        <div class="text-center">
+                            <i class="fas fa-tools text-purple-600 text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Practical Experience</h3>
+                            <p class="text-gray-600">Gained extensive hands-on experience in industrial automation and Industry 4.0 protocols</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Key Skills Demonstrated</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">PLC Programming (CODESYS, Structured Text)</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">HMI Design & Development</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Industrial Communication (CAN Bus, OPC UA)</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Industrial Automation</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">System Integration</span>
+                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">C/C++</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Mohammad Al Aloush. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
