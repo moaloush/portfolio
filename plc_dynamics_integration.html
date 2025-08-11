@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLC to Microsoft Dynamics 365 Integration Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1f5ca9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #1f5ca9;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .highlight {
+            background: #e6f0ff;
+            padding: 10px;
+            border-left: 4px solid #1f5ca9;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PLC to Microsoft Dynamics 365 Integration</h1>
+    </header>
+    <main>
+        <h2>Project Overview</h2>
+        <p>
+            In this project, I connected industrial PLC (Programmable Logic Controller) devices to 
+            <strong>Microsoft Dynamics 365</strong> using <strong>Node-RED</strong>. 
+            The system was designed to detect product passage using optical sensors and 
+            transmit this information directly into the ERP system for real-time processing.
+        </p>
+
+        <h2>System Architecture</h2>
+        <img src="a353720a-8db8-4d23-841e-a1b107400b0d.png" alt="System Architecture Diagram">
+
+        <p>
+            The solution used <strong>SICK photoelectric sensors</strong> connected to PLCs. 
+            When a product passed a sensor, the PLC sent a signal via <strong>TCP/IP</strong> 
+            to a <strong>Node-RED</strong> instance running on a <strong>Siemens SIMATIC IOT2000</strong> device.
+        </p>
+
+        <div class="highlight">
+            Node-RED processed the incoming data and sent it via HTTPS requests to Microsoft Dynamics 365, 
+            where the ERP system updated production and inventory records in real-time.
+        </div>
+
+        <h2>Error Handling & Notifications</h2>
+        <p>
+            The PLCs also monitored for system or process errors. If an error was detected, 
+            it was transmitted to Node-RED, which then distributed notifications to different users 
+            through various channels such as email, depending on the severity and type of error.
+        </p>
+
+        <h2>Hardware Used</h2>
+        <img src="dd3d54be-0244-44d9-96e8-5fd127e4717b.png" alt="Siemens SIMATIC IOT2000">
+        <p>
+            The central processing and integration logic ran on a 
+            <strong>Siemens SIMATIC IOT2000</strong> device, providing a reliable industrial 
+            IoT platform for bridging automation hardware with enterprise software.
+        </p>
+
+        <h2>Key Achievements</h2>
+        <ul>
+            <li>Successfully integrated PLC data into Microsoft Dynamics 365 in real-time.</li>
+            <li>Implemented HTTPS-based secure communication between Node-RED and ERP.</li>
+            <li>Automated error notifications to relevant personnel.</li>
+            <li>Used industrial IoT hardware (Siemens IOT2000) for robust field deployment.</li>
+        </ul>
+    </main>
+</body>
+</html>
